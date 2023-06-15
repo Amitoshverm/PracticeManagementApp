@@ -3,6 +3,7 @@ package com.example.AnotherManagementApp.Service;
 import com.example.AnotherManagementApp.Entity.User;
 import com.example.AnotherManagementApp.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements ServiceMethods{
 
-    @Autowired
+    @Autowired(required = false)
     private UserRepository userRepository;
 
 
